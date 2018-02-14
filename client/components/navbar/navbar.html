@@ -1,0 +1,69 @@
+<!--<div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">mean-full-stack</a>
+    </div>
+    <div uib-collapse="$ctrl.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="item in $ctrl.menu" ui-sref-active="active">
+            <a ui-sref="{{item.state}}">{{item.title}}</a>
+        </li>
+        <li ng-show="$ctrl.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-hide="$ctrl.isLoggedIn()" ui-sref-active="active"><a ui-sref="signup">Sign up</a></li>
+        <li ng-hide="$ctrl.isLoggedIn()" ui-sref-active="active"><a ui-sref="login">Login</a></li>
+        <li ng-show="$ctrl.isLoggedIn()"><p class="navbar-text">Hello {{ $ctrl.getCurrentUser().name }}</p> </li>
+        <li ng-show="$ctrl.isLoggedIn()" ui-sref-active="active"><a ui-sref="settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+        <li ng-show="$ctrl.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>-->
+<!--<style>
+  .horizontal-collapse {
+    height: 70px;
+  }
+  .navbar-collapse.in {
+    overflow-y: hidden;
+  }
+</style>-->
+<div>
+  <p>Resize window to less than 768 pixels to display mobile menu toggle button.</p>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" ng-click="$ctrl.isNavCollapsed = !$ctrl.isNavCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">A menu</a>
+    </div>
+    <div class="collapse navbar-collapse" uib-collapse="$ctrl.isNavCollapsed">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--<hr>
+  <button type="button" class="btn btn-default" ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed">Toggle collapse Vertically</button>
+  <hr>
+  <div uib-collapse="isCollapsed">
+    <div class="well well-lg">Some content</div>
+  </div>
+
+  <button type="button" class="btn btn-default" ng-click="$ctrl.isCollapsedHorizontal = !$ctrl.isCollapsedHorizontal">Toggle collapse Horizontally</button>
+  <hr>
+  <div class="horizontal-collapse" uib-collapse="isCollapsedHorizontal">
+    <div class="well well-lg">Some content</div>
+  </div>-->
+</div>
